@@ -1,0 +1,39 @@
+.scrollToTop{background-color:crimson; color:#fff}
+.scrollToTop:hover, .scrollToTop:focus{background-color:#fff; color:crimson; border-color:1px solid crimson}
+.logo > span{color:crimson}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{background-color:crimson}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{background-color:crimson}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{background-color:crimson}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{background-color:crimson}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{background-color:crimson}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{background-color:crimson}
+.latest_newsarea span{background:none repeat scroll 0 0 #605ca8}
+.latest_post > h2 span{background:none repeat scroll 0 0 crimson}
+#prev-button{color:crimson}
+#next-button{color:crimson}
+.single_post_content > h2 span{background:none repeat scroll 0 0 crimson}
+.single_sidebar > h2 span{ background:none repeat scroll 0 0 crimson}
+.bsbig_fig figcaption a:hover{color:crimson}
+.spost_nav .media-body > a:hover{color:crimson}
+.cat-item a:hover{background-color:crimson}
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus{background-color:crimson}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{background-color:crimson}
+.single_sidebar > ul > li a:hover{color:crimson}
+.footer_widget > h2:hover{color:crimson}
+.tag_nav li a:hover{color:crimson; border-color:crimson}
+.copyright a:hover{color:crimson}
+.post_commentbox a:hover, .post_commentbox span:hover{color:crimson}
+.breadcrumb{border-left:10px solid crimson}
+.single_page_content ul li:before{background-color:crimson}
+.single_page_content h2, .single_page_content h3, .single_page_content h4, .single_page_content h5, .single_page_content h6{color:crimson}
+.nav-slit .icon-wrap{background-color:crimson}
+.nav-slit h3{background:crimson}
+.catgArchive{background-color:crimson}
+.error_page > h3{color:crimson}
+.error_page > span{background:none repeat scroll 0 0 crimson}
+.error_page > a{background-color:crimson}
+.contact_area > h2{background-color:crimson}
+.contact_form input[type="submit"]{background-color:crimson}
+.contact_form input[type="submit"]:hover{background-color:#fff; color:crimson}
+.related_post > h2 i{color:crimson}
+.form-control:focus{border-color:crimson;  box-shadow:0 0px 1px crimson inset,0 0 5px crimson}
