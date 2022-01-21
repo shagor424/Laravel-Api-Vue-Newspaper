@@ -6,8 +6,8 @@
               <ul class="photograph_nav  wow fadeInDown">
                
                  <li v-for="value in ppposts" :key="value.id">
-                  <div style="height: 125px" class="media"> <a class="media-left" href=""> <img :src="'http://127.0.0.1:8000/upload/postimage/' + value.image" alt=""> </a>
-                    <div class="media-body"> <a class="catg_title" href="">{{ value.title}}</a> </div>
+                  <div style="height: 125px" class="media"> <router-link class="media-left" :to="{name:'SinglePost',params:{post_id:value.id}}"> <img :src="'http://127.0.0.1:8000/upload/postimage/' + value.image" alt=""> </router-link>
+                    <div class="media-body"> <router-link class="catg_title" :to="{name:'SinglePost',params:{post_id:value.id}}">{{ value.title}}</router-link> </div>
                   </div>
                 </li>
               </ul>

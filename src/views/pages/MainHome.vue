@@ -9,8 +9,8 @@
             <h2><span>স্কুল/কলেজ</span></h2>
               <ul class="spost_nav">
                 <li v-for="college in collegeposts" :key="college.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + college.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ college.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:college.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + college.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:college.id}}" class="catg_title">{{ college.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -25,8 +25,8 @@
             <h2><span>জাতীয় বিশ্ববিদ্যালয়</span></h2>
             <ul class="spost_nav">
                 <li v-for="nu in nuposts" :key="nu.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + nu.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ nu.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:nu.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + nu.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:nu.id}}" class="catg_title">{{ nu.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -41,8 +41,8 @@
             <h2><span>মাদ্রাসা</span></h2>
            <ul class="spost_nav">
                 <li v-for="mad in madposts" :key="mad.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + mad.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ mad.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:mad.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + mad.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:mad.id}}" class="catg_title">{{ mad.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -57,8 +57,8 @@
             <h2><span>উন্মুক্ত বিশ্ববিদ্যালয়</span></h2>
            <ul class="spost_nav">
                 <li v-for="bou in bouposts" :key="bou.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + bou.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ bou.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:bou.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + bou.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:bou.id}}" class="catg_title">{{ bou.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -73,8 +73,8 @@
             <h2><span>প্রাইমারী</span></h2>
             <ul class="spost_nav">
                 <li v-for="primary in primaryposts" :key="primary.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + primary.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ primary.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:primary.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + primary.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:primary.id}}" class="catg_title">{{ primary.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -89,8 +89,8 @@
             <h2><span>ভোকেশনাল</span></h2>
             <ul class="spost_nav">
                 <li v-for="voc in vocposts" :key="voc.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + voc.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ voc.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:voc.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + voc.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:voc.id}}" class="catg_title">{{ voc.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -106,8 +106,8 @@
                 
                 <ul class="spost_nav">
                 <li v-for="govjob in govjobposts" :key="govjob.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + govjob.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ govjob.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:govjob.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + govjob.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:govjob.id}}" class="catg_title">{{ govjob.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -122,8 +122,8 @@
                
                <ul class="spost_nav">
                 <li v-for="pvtjob in pvtjobposts" :key="pvtjob.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + pvtjob.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ pvtjob.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:pvtjob.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + pvtjob.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:pvtjob.id}}" class="catg_title">{{ pvtjob.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -141,8 +141,8 @@
                 
                <ul class="spost_nav">
                 <li v-for="other in otherposts" :key="other.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + other.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ other.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:other.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + other.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:other.id}}" class="catg_title">{{ other.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -157,8 +157,8 @@
                 <h2><span>খেলাধুলা</span></h2>
                <ul class="spost_nav">
                 <li v-for="sport in sportposts" :key="sport.id">
-                <div class="media"> <router-link to="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + sport.image"> </router-link>
-                  <div class="media-body"> <router-link to="" class="catg_title">{{ sport.title }} </router-link> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:sport.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + sport.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:sport.id}}" class="catg_title">{{ sport.title }} </router-link> </div>
                 </div>
               </li>
               </ul>
@@ -196,7 +196,7 @@ components:{MySlider, VideoGallery, PhotoGallery},
 
  data(){
             return{
-
+                posts: [],
                 collegeposts: [],
                 nuposts: [],
                 madposts: [],
@@ -231,6 +231,16 @@ components:{MySlider, VideoGallery, PhotoGallery},
     //     this.results = response.data;
     //   }).catch( error => { console.log(error); });
     // }
+
+      getPostData() {
+      axios.get("http://127.0.0.1:8000/api/posts")
+        .then(response => {
+          this.posts = response.data.data;
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    },
      getData() {
       
       axios.get("http://127.0.0.1:8000/api/school/college/posts")

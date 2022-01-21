@@ -8,7 +8,7 @@
             <ul class="top_nav" >
               <li style="font-size: 16px"><router-link :to="{ name:'Home' }">হোম</router-link></li>
               <li style="font-size: 16px"><router-link :to="{ name:'About' }">সম্পর্কে</router-link></li>
-              <li style="font-size: 16px"><router-link :to="{ name:'Contact' }">যোগাযোগ</router-link></li>
+              <li style="font-size: 16px"><router-link :to="{ name:'Contact'}">যোগাযোগ</router-link></li>
             </ul>
           </div>
           <div >

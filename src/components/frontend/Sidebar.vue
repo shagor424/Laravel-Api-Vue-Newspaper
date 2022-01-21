@@ -6,8 +6,8 @@
             <h2><span>পাবলিক বিশ্ববিদ্যারয়</span></h2>
             <ul class="spost_nav">
                  <li v-for="value in publicposts" :key="value.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + value.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ value.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:value.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + value.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:value.id}}" class="catg_title">{{ value.title }} </router-link> </div>
                 </div>
               </li>
              </ul>
@@ -25,8 +25,8 @@
               <div role="tabpanel" class="tab-pane active" id="category">
                 <ul class="spost_nav">         
                 <li v-for="admission in admissionposts" :key="admission.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + admission.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ admission.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:admission.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + admission.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:admission.id}}" class="catg_title">{{ admission.title }} </router-link> </div>
                 </div>
               </li>         
                 </ul>
@@ -38,8 +38,8 @@
                 <div class="vide_area">
                   <ul class="spost_nav">         
                    <li v-for="exam in examposts" :key="exam.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + exam.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ exam.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:exam.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + exam.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:exam.id}}" class="catg_title">{{ exam.title }} </router-link> </div>
                 </div>
               </li>         
                 </ul>
@@ -51,8 +51,8 @@
               <div role="tabpanel" class="tab-pane" id="comments">
                 <ul class="spost_nav">         
                 <li v-for="result in resultposts" :key="result.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + result.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ result.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:result.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + result.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:result.id}}" class="catg_title">{{ result.title }} </router-link> </div>
                 </div>
               </li>       
                 </ul>
@@ -72,8 +72,8 @@
               <div role="tabpanel" class="tab-pane active" id="category1">
                 <ul class="spost_nav">         
                    <li v-for="scholar in scholarposts" :key="scholar.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + scholar.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ scholar.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:scholar.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + scholar.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:scholar.id}}" class="catg_title">{{ scholar.title }} </router-link> </div>
                 </div>
               </li>        
                 </ul>
@@ -85,8 +85,8 @@
                 <div class="vide_area">
                   <ul class="spost_nav">         
                   <li v-for="stipend in stipendposts" :key="stipend.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + stipend.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ stipend.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:stipend.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + stipend.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:stipend.id}}" class="catg_title">{{ stipend.title }} </router-link> </div>
                 </div>
               </li>           
                 </ul>
@@ -98,8 +98,8 @@
               <div role="tabpanel" class="tab-pane" id="comments1">
                <ul class="spost_nav">         
                   <li v-for="admin in adminsposts" :key="admin.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + admin.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ admin.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:admin.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + admin.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:admin.id}}" class="catg_title">{{ admin.title }} </router-link> </div>
                 </div>
               </li>          
                 </ul>
@@ -119,8 +119,8 @@
               <div role="tabpanel" class="tab-pane active" id="category4">
                <ul class="spost_nav">         
                      <li v-for="mpo in mpoposts" :key="mpo.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + mpo.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ mpo.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:mpo.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + mpo.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:mpo.id}}" class="catg_title">{{ mpo.title }} </router-link> </div>
                 </div>
               </li>        
                 </ul>
@@ -132,8 +132,8 @@
                 <div class="vide_area">
                  <ul class="spost_nav">         
                     <li v-for="mposar in mposarposts" :key="mposar.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + mposar.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ mposar.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:mposar.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + mposar.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:mposar.id}}" class="catg_title">{{ mposar.title }} </router-link> </div>
                 </div>
               </li>        
                 </ul>
@@ -145,8 +145,8 @@
               <div role="tabpanel" class="tab-pane" id="comments4">
                 <ul class="spost_nav">         
                      <li v-for="ntrca in ntrcaposts" :key="ntrca.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + ntrca.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ ntrca.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:ntrca.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + ntrca.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:ntrca.id}}" class="catg_title">{{ ntrca.title }} </router-link> </div>
                 </div>
               </li>         
                 </ul>
@@ -167,8 +167,8 @@
               <div role="tabpanel" class="tab-pane active" id="category5">
                <ul class="spost_nav">         
                       <li v-for="teacher in teacherposts" :key="teacher.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + teacher.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ teacher.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:teacher.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + teacher.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:teacher.id}}" class="catg_title">{{ teacher.title }} </router-link> </div>
                 </div>
               </li>         
                 </ul>
@@ -180,8 +180,8 @@
                 <div class="vide_area">
                  <ul class="spost_nav">         
                       <li v-for="student in studentposts" :key="student.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + student.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ student.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:student.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + student.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:student.id}}" class="catg_title">{{ student.title }} </router-link> </div>
                 </div>
               </li>         
                 </ul>
@@ -193,8 +193,8 @@
               <div role="tabpanel" class="tab-pane" id="comments5">
                <ul class="spost_nav">         
                        <li v-for="stuff in stuffposts" :key="stuff.id">
-                <div class="media wow fadeInDown"> <a href="" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + stuff.image"> </a>
-                  <div class="media-body"> <a href="" class="catg_title">{{ stuff.title }} </a> </div>
+                <div class="media"> <router-link :to="{name:'SinglePost',params:{post_id:stuff.id}}" class="media-left"> <img alt="" :src="'http://127.0.0.1:8000/upload/postimage/' + stuff.image"> </router-link>
+                  <div class="media-body"> <router-link :to="{name:'SinglePost',params:{post_id:stuff.id}}" class="catg_title">{{ stuff.title }} </router-link> </div>
                 </div>
               </li>         
                 </ul>
@@ -215,14 +215,14 @@
             </ul>
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="category2">
-                <ul v-for="allcategorytag in allcategorytagposts" :key="allcategorytag.id">
-                   <li class="cat-item"><a href="">{{allcategorytag.category_id }}</a></li>       
+                <ul v-for="category in categories" :key="category.id">
+                   <li class="cat-item"><router-link :to="{name:'CategoryBy',params:{category_id:category.id}}">{{category.name }}</router-link></li>       
                </ul>
               </div>
              
               <div role="tabpanel" class="tab-pane" id="comments2">
-                <ul v-for="allsubcategorytag in allsubcategorytagposts" :key="allsubcategorytag.id">
-                   <li class="cat-item"><a href="">{{allsubcategorytag.sub_category_id }}</a></li>       
+                <ul v-for="subcategory in subcategories" :key="subcategory.id">
+                   <li class="cat-item"><router-link :to="{name:'SubCategoryBy',params:{subcategory_id:subcategory.id}}">{{subcategory.name }}</router-link></li>       
                </ul>
               </div>
                <div role="tabpanel" class="tab-pane" id="video2">
@@ -239,7 +239,7 @@
             <h2><span>Category Archive</span></h2>
             <select class="catgArchive">
               <option>Select Category</option>
-               <option value="1" v-for="allcategorytag in allcategorytagposts" :key="allcategorytag.id">{{ allcategorytag.category_id }}</option> 
+               <option value="1" v-for="category in categories" :key="category.id">{{ category.name }}</option> 
                
             </select>
           </div>
@@ -276,8 +276,8 @@ data(){
            teacherposts: [],
            studentposts: [],
            stuffposts: [],
-           allcategorytagposts: [],
-           allsubcategorytagposts: [],
+           categories: [],
+           subcategories: [],
            alltagposts: [],
 
            }
@@ -297,11 +297,9 @@ data(){
     this.getTeacherData();
     this.getStudentData();
     this.getStuffData();
-    this.getAllcategorytagData();
-    this.getAllsubcategorytagData();
-
     this.getAlltagData();
-    
+    this.loadCategories();
+    this.loadSubCategories();
     
 
   },
@@ -433,24 +431,16 @@ data(){
           console.log(e);
         });
     },
-     getAllcategorytagData() {
-      axios .get("http://127.0.0.1:8000/api/allcategory/tag/posts")
-        .then(response => {
-          this.allcategorytagposts = response.data.data;
-        })
-        .catch(e => {
-          console.log(e);
+    loadCategories(){
+        axios.get('http://127.0.0.1:8000/api/categories').then(response =>{
+          this.categories = response.data;
         });
-    },
-    getAllsubcategorytagData() {
-      axios .get("http://127.0.0.1:8000/api/all/subcategory/tag/posts")
-        .then(response => {
-          this.allsubcategorytagposts = response.data.data;
-        })
-        .catch(e => {
-          console.log(e);
+      },
+   loadSubCategories(){
+        axios.get('http://127.0.0.1:8000/api/subcategories').then(response =>{
+          this.subcategories = response.data;
         });
-    },
+      },
       getAlltagData() {
       axios .get("http://127.0.0.1:8000/api/alltag/posts")
         .then(response => {
